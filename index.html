@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/cover.jpg" type="img/pp.jpg">
+	<title>Salina Thapa Khadka</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<section class="h-text">
+			<!-- <i id="midcamera" class="fa fa-desktop"></i> -->
+			<h2>Salina Thapa Khadka</h2>
+			<h4>Thank you for visitng my page. Here you can find more about me.</h4>					
+		</section>
+	</header>	
+
+	<section class="member">
+		<div class="member-info">
+			<h2>Information</h2>		
+		</div>	
+
+		<div class="member-card">
+			<img data-aos="zoom-in-up" src="img\cover.jpg">
+			<p>I am a Registered Nurse with more than 3 years of experience and many more to go. I attribute my success to this; I never gave nor took any excuse.</p>
+			<h3>Salina Thapa Khadka</h3>
+			<a href="https://www.facebook.com/profile.php?id=100009113933874" target="_blank"><img src="img\icon1.png" data-aos="flip-left"></a>
+			<a href="https://www.instagram.com/" target="_blank"><img src="img\icon2.png" data-aos="flip-left">
+			</a>			
+			<a href="img\CV.pdf" target="_blank"><img src="img\cv1.jpg" id="whatsappimg" data-aos="flip-left"></a>	
+		</div>	
+	</section>
+
+	<footer id="footer">		
+
+		<div class="f-contact">
+
+			<div>
+				<p>I have working experience in Medicity, Hams Hospital and currently working as a nursing instructer in Shankarapur Hospital.</p></i>				
+			</div>
+
+			<div>
+				<i id="gmail" class="fa fa-envelope"><p>salinathapa.st@gmail.com</p></i>
+							
+				<i id="uni" class="fa fa-university"><p>Kathmandu University</p></i>	
+						
+				<i id="home" class="fa fa-home"><p>Kathmandu, Nepal</p></i>				
+			</div>	
+		</div>
+	</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript">	
+	$('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+	$('.portfolio-menu ul li').click(function(){
+		$('.portfolio-menu ul li').removeClass('active');
+		$(this).addClass('active');
+
+		var selector = $(this).attr('data-filter');
+		$('.portfolio-item').isotope({
+			filter:selector
+		});
+		return false;
+	});
+
+	 function showMyNumber(){
+		alert("9815394030");
+	}
+
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
